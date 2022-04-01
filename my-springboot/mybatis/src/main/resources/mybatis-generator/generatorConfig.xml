@@ -40,25 +40,13 @@
         </javaClientGenerator>
 
         <!-- 要生成的表 tableName 是数据库中的表名或视图名 domainObjectName 是实体类名-->
-        <table tableName="shiro_user" domainObjectName="ShiroUser"
+        <table tableName="person" domainObjectName="Person"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
         </table>
 
-        <table tableName="shiro_role" domainObjectName="ShiroRole"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
-        </table>
 
-        <table tableName="shiro_permission" domainObjectName="ShiroPermission"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
-        </table>
     </context>
 </generatorConfiguration>
